@@ -3,8 +3,6 @@ dotenv.config({
     path: './env',
 });  // Load environment variables
 
-
-
 import express from 'express';
 import connectDB from './db/index.js';
 
@@ -12,7 +10,7 @@ import connectDB from './db/index.js';
 const app = express();
 
 
-//app.use(express.json());
+
 
 connectDB().then(()=>{
   const PORT = process.env.PORT || 8000;
